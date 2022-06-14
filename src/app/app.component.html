@@ -1,0 +1,25 @@
+<!-- NAVIGATION -->
+<nav class="navbar navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">My votes App</a>
+</nav>
+
+
+<div class="container p-4">
+  <div class="row">
+    <!-- FORM -->
+    <div class="col-md-8 offset-md-2">
+      <div class="card">
+        <form class="card-body bg-primary">
+
+          <h3 class="card-title text-center text-light">Select your favorite candidate</h3>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- LINKS -->
+  <app-link *ngFor="let link of sortedLinks()" [link]="link"></app-link>
+</div>
+
+
+
